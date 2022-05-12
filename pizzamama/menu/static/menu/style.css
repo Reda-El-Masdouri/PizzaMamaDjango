@@ -3,13 +3,14 @@ ul {
 }
 
 body {
-    background: url(images/menu_background.jpg) no-repeat center center fixed; 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/menu_background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: white;
     font-family: Arial;
+    /* background-attachment: scroll; */
 }
 
 #header-img {
@@ -36,11 +37,16 @@ div.menu-title {
 .menu_list_title {
     font-size: 20px;
     font-weight: bold;
+    width: 400px;
+    display: inline-block;
 }
 .menu_list_price {
     margin-left: 8px;
     font-size: 20px;
     color: #DD7835;
+    display: inline-block;
+    width: 70px;
+    text-align: right;
 }
 .menu_list_ingredients {
     color: #C8C8C8;
@@ -48,4 +54,15 @@ div.menu-title {
     display: block; 
     /* le display block pour revenir à la ligne et qu'on puisse rajouter des marges au ingrédients */
     margin-top: 4px;
+    width: 300px;
+}
+.menu_list_vegetarienne {
+    color: black;
+    font-size: 9px;
+    background-color: #DD7835;
+    margin-top: 4px;
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: bold;
 }
