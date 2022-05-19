@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-t^3&lblc55^iqp!rxxv9w#r^+*@)g(-ae95xgat)qo%0o=taz5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["RedaElMasdouri.pythonanywhere.com", "127.0.0.1", "pizzamamadjango-rem.herokuapp.com"]
+ALLOWED_HOSTS = ["RedaElMasdouri.pythonanywhere.com", "127.0.0.1", "pizzamamadjango-rem.herokuapp.com", "limitless-harbor-83714.herokuapp.com"]
 
 
 # Application definition
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'pizzamama.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
